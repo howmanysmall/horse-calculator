@@ -26,7 +26,7 @@ export const FormRow: React.FC<IFormRowProperties> = ({ id, summaryState, valueS
 						aria-describedby="basic-addon2"
 						className="form-input text-lg w-full oddsInput text-black"
 						id={`horse${id}`}
-						type="number"
+						type="text"
 						value={value.toString()}
 						onChange={onChange}
 					/>
