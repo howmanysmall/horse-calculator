@@ -13,14 +13,15 @@
 		"jsx-a11y",
 		"prettier",
 		"react-hooks",
-		// "react-redux",
 		"react-refresh",
-		"react"
+		"react",
+		"regexp",
+		"unicorn"
 	],
 
 	"env": {
 		"browser": true,
-		"es2020": true
+		"es2022": true
 	},
 
 	"extends": [
@@ -28,8 +29,9 @@
 		"plugin:jsx-a11y/recommended",
 		"plugin:prettier/recommended",
 		"plugin:react-hooks/recommended",
-		// "plugin:react-redux/recommended",
-		"plugin:react/recommended"
+		"plugin:react/recommended",
+		"plugin:regexp/recommended",
+		"plugin:unicorn/recommended"
 	],
 
 	"rules": {
@@ -52,6 +54,11 @@
 		"@typescript-eslint/no-non-null-assertion": "off",
 		"react-refresh/only-export-components": "warn",
 		"react/prop-types": "off",
-		"react/react-in-jsx-scope": "Off"
+		"react/react-in-jsx-scope": "Off",
+		"regexp/strict": "off",
+		"unicorn/no-new-array": "off",
+		"unicorn/switch-case-braces": "off",
+		"unicorn/no-null": "off",
+		"unicorn/prefer-at": "off"
 	}
 }
