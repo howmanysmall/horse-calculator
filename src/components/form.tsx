@@ -2,24 +2,35 @@ import FormRow from "./form-row";
 import type { RecoilState } from "recoil";
 
 export interface IFormProperties {
-	rowData: Array<[id: number, summaryState: [percentage: number, isSafe: boolean], valueState: RecoilState<number>]>;
+  rowData: Array<
+    [
+      id: number,
+      summaryState: [percentage: number, isSafe: boolean],
+      valueState: RecoilState<number>
+    ]
+  >;
 }
 
 export const Form: React.FC<IFormProperties> = ({ rowData }) => {
-	return (
-		<div className="row">
-			<div className="w-full">
-				{rowData.map(([id, summaryState, valueState]) => (
-					<FormRow key={`Row${id}`} id={id} summaryState={summaryState} valueState={valueState} />
-				))}
-			</div>
+  return (
+    <div className="row">
+      <div className="w-full">
+        {rowData.map(([id, summaryState, valueState]) => (
+          <FormRow
+            key={`Row${id}`}
+            id={id}
+            summaryState={summaryState}
+            valueState={valueState}
+          />
+        ))}
+      </div>
 
-			{/* <br />
+      {/* <br />
 			<button type="button" className="bg-green-500 text-white text-lg py-2 px-4 rounded" id="calculate">
 				Calculate
 			</button> */}
-		</div>
-	);
+    </div>
+  );
 };
 
 export default Form;
