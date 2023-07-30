@@ -13,17 +13,15 @@ export interface IFormProperties {
 
 export const Form: React.FC<IFormProperties> = ({ rowData }) => {
   return (
-    <div className="row">
-      <div className="w-full">
-        {rowData.map(([id, summaryState, valueState]) => (
-          <FormRow
-            key={`Row${id}`}
-            id={id}
-            summaryState={summaryState}
-            valueState={valueState}
-          />
-        ))}
-      </div>
+    <div role="list">
+      {rowData.map(([id, summaryState, valueState]) => (
+        <FormRow
+          key={`Row${id}`}
+          id={id}
+          summaryState={summaryState}
+          valueState={valueState}
+        />
+      ))}
 
       {/* <br />
 			<button type="button" className="bg-green-500 text-white text-lg py-2 px-4 rounded" id="calculate">
