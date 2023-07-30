@@ -1,64 +1,59 @@
 {
-	"parser": "@typescript-eslint/parser",
-	"parserOptions": {
-		"jsx": true,
-		"useJSXTextNode": true,
-		"ecmaVersion": "latest",
-		"sourceType": "module",
-		"project": "./tsconfig.json"
-	},
-
-	"plugins": [
-		"@typescript-eslint",
-		"jsx-a11y",
-		"prettier",
-		"react-hooks",
-		"react-refresh",
-		"react",
-		"regexp",
-		"unicorn"
-	],
-
-	"env": {
-		"browser": true,
-		"es2022": true
-	},
-
-	"extends": [
-		"plugin:@typescript-eslint/recommended",
-		"plugin:jsx-a11y/recommended",
-		"plugin:prettier/recommended",
-		"plugin:react-hooks/recommended",
-		"plugin:react/recommended",
-		"plugin:regexp/recommended",
-		"plugin:unicorn/recommended"
-	],
-
-	"rules": {
-		"prettier/prettier": [
-			"warn",
-			{
-				"semi": true,
-				"trailingComma": "all",
-				"singleQuote": false,
-				"printWidth": 120,
-				"tabWidth": 4,
-				"useTabs": true,
-				"endOfLine": "auto"
-			}
-		],
-
-		"@typescript-eslint/explicit-module-boundary-types": "off",
-		"@typescript-eslint/no-empty-function": "off",
-		"@typescript-eslint/no-empty-interface": "off",
-		"@typescript-eslint/no-non-null-assertion": "off",
-		"react-refresh/only-export-components": "warn",
-		"react/prop-types": "off",
-		"react/react-in-jsx-scope": "Off",
-		"regexp/strict": "off",
-		"unicorn/no-new-array": "off",
-		"unicorn/switch-case-braces": "off",
-		"unicorn/no-null": "off",
-		"unicorn/prefer-at": "off"
-	}
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "jsx": true,
+        "useJSXTextNode": true,
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "jsx-a11y",
+        "prettier",
+        "react-hooks",
+        "react-refresh",
+        "react",
+        "regexp",
+        "unicorn"
+    ],
+    "env": {
+        "browser": true,
+        "es2022": true
+    },
+    "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:jsx-a11y/recommended",
+        "plugin:prettier/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:react/recommended",
+        "plugin:regexp/recommended",
+        "plugin:unicorn/recommended"
+    ],
+    "rules": {
+        "prettier/prettier": [
+            "warn",
+            {
+                "semi": true,
+                "trailingComma": "all",
+                "singleQuote": false,
+                "printWidth": 120,
+                "tabWidth": 4,
+                "useTabs": true,
+                "endOfLine": "auto"
+            }
+        ],
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/no-empty-function": "off",
+        "@typescript-eslint/no-empty-interface": "off",
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "react-refresh/only-export-components": "warn",
+        "react/prop-types": "off",
+        "react/react-in-jsx-scope": "Off",
+        "regexp/strict": "off",
+        "unicorn/no-new-array": "off",
+        "unicorn/switch-case-braces": "off",
+        "unicorn/no-null": "off",
+        "unicorn/prefer-at": "off"
+    }
 }
